@@ -3,12 +3,17 @@
 	box-sizing: border-box;
 }
 
+html{
+	position:relative;
+	min-height:100%;
+}
+
 body{
 	background: url(../images/tree_bark.png) repeat;
 	color: #777777;
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 	top-padding:0;
-	margin: 0;
+	margin: 0 0 75px;
 	height:100%;
 	width:100%;
 	
@@ -30,7 +35,7 @@ h1{
 	padding: 20px;
 	float: left;
 	margin-top: 0px;
-	margin-left: 10%;
+	
 }
 
 h2{
@@ -54,16 +59,6 @@ h3{
 	text-align: center;
 }
 
-h4{
-	font-family:"Georgia", "Times New Roman", Times, serif;
-	background-color:#4aaaa5;
-	color:white;
-	padding: 15px;
-	text-align: center;
-	float: left;
-	font-weight: normal;
-}
-
 p{
 	font-size: 12px;
 	line-height: 150%;
@@ -83,15 +78,34 @@ footer{
 }
 
 .container{
-	/*width: 960px;*/
+	position:relative;
 	margin: 0 auto 0 auto;
 	padding: 0 auto 0 auto;
+	width: 960px;
+	height: 100%;
+	display: flex;
+}
+
+.head-container{
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+	width: 960px;
+}
+
+.footer-container{
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	background-color: #666666;
+	color: white;
+	border-top: 6px solid #4aaaa5;
+	bottom: 0;
+	left:0;
+	
 }
 
 #menu-buttons{
 	float:right;
-	overflow: auto;
-	margin-right: 15%;
 	margin-top: 10px;
 }
 .button{
@@ -119,23 +133,14 @@ footer{
 
 #main-bio{
 	float:left;
-	margin-left: 10%;
 	background-color: white;
 	border: 1px solid #dddddd;
 	height: 50%;
 	padding-bottom: 30px;
 	padding-right: 30px;
-	width: 45%;
-}
-
-#footer-container{
-	position: absolute;
-	height: 75px;
-	background-color: #666666;
-	color: white;
-	border-top: 6px solid #4aaaa5;
-	bottom: 0;
-	width: 100%;
+	width: 650px;
+	margin-bottom:30px;
+	
 }
 
 /*Social Icon sidebar*/
@@ -143,12 +148,11 @@ footer{
 	background-color:white;
 	border: 1px solid #dddddd;
 	float:right;
-	margin-right: 15%;
-	margin-width:270px;
-	width:20%;
+	margin: 0px;
+	margin-left: 40px;
+	width:270px;
 	height: 180px;
-	align-content: center;
-	margin-width:270px;
+	overflow:auto;
 }
 
 #social-icons{
@@ -160,20 +164,20 @@ footer{
 #icon-container{
 	margin-left: 40px;
 	margin-right: 20px;
+	overflow:auto;
 
 }
 
 /*Contact Page Form*/
 #contact-box{
 	float:left;
-	margin-left: 10%;
 	background-color: white;
 	border: 1px solid #dddddd;
-	height: 50%;
-	width: 45%;
+	width: 650px;
 	padding: 20px;
 	padding-left: 10px;
 	padding-top: 10px;
+	margin-bottom:30px;
 	
 }
 
@@ -203,21 +207,51 @@ footer{
 .submit-button:hover{
 	color: black;
 	background-color: white;
+	border: 2px solid black;
 }
 
 #portfolio{
 	float:left;
-	margin-left: 10%;
 	background-color: white;
 	border: 1px solid #dddddd;
-	height: 50%;
-	padding-bottom: 30px;
-	padding-right: 30px;
-	width: 45%;
+	overflow: auto;
+	width: 650px;
+	margin-bottom:30px;
+	padding-bottom: 10px;
 	
 }
 
 #portfolio-img{
-	height: 150px;
 
+	height: 200px;
 }
+
+.imgHolder{
+	position:relative;
+	margin: 15px;
+	margin-left: 30px;
+	float: left;
+}
+
+.imgHolder-R{
+	position:relative;
+	margin: 15px;
+	margin-left: 30px;
+	float: left;
+}
+
+.imgHolder span, .imgHolder-R span{
+	position:absolute;
+	font-family:"Georgia", "Times New Roman", Times, serif;
+	background-color:#4aaaa5;
+	color:white;
+	padding: 15px;
+	margin: 0;
+	width: 266.5px;
+	text-align: center;
+	font-weight: normal;
+	bottom: 20px;
+	left: 0px;
+}
+
+

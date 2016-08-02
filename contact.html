@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 	<title>Stefanie Ding: Contact</title>
@@ -9,8 +10,9 @@
 </head>
 
 <body>
-	<div class="container">
+
 	<header>
+		<div class="head-container">
 			<a href="index.html"><h1>Stefanie Ding</h1></a>
 
 	<section id="menu-buttons">
@@ -18,16 +20,17 @@
 		<a href="portfolio.html"><button class="button">Portfolio</button></a>
 		<a href="contact.html"><button class="button">Contact</button></a>
 	</section>
+		</div>
 	</header>
-
+<div class="container">
 	<section id ="contact-box">
 	<h2>Contact</h2><br>
 
 	<section id="form-container">
 		<form action="#">
-		Name<br><input type="text" id="form-style" name="Name" placeholder="John Smith"><br>
-		Email<br><input type="text" id="form-style"name="Email" placeholder="example@gmail.com"><br>
-		Message<br><input type="textarea" id="message-style">
+		Name<br><input id="form-style" placeholder="John Smith"><br>
+		Email<br><input name="Email" id="form-style" placeholder="example@gmail.com"><br>
+		Message<br><textarea name ="message" id="message-style" rows="10" cols="30"></textarea>
 		<input type="submit" value="Submit" class="submit-button">
 		</form>
 	</section>
@@ -49,11 +52,12 @@
 	</section>
 
 	</section>
-
-	<section id="footer-container">
-		<footer>&copy Copyright 2016 Stefanie Ding</footer>
-	</section>
-
 </div>
+
+<div class="footer-container">
+	<footer>&copy Copyright 2016 Stefanie Ding</footer>
+</div>
+
+
 </body>
 </html>
